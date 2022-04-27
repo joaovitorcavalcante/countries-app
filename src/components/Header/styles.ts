@@ -1,10 +1,10 @@
-import { IoMoonOutline } from 'react-icons/io5';
+import { IoMoonOutline, IoMoon } from 'react-icons/io5';
 import styled from 'styled-components';
 
 export const Wrapper = styled.header`
   padding: 4rem 0;
 
-  background-color: ${({ theme }) => theme.colors.elements.general};
+  background-color: ${({ theme }) => theme.colors.elements};
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
 `;
 
@@ -30,11 +30,18 @@ export const ToggleTheme = styled.button`
 
   font-size: 1.2rem;
   font-weight: 600;
-  line-height: 1.6rem;
+  line-height: 1.637rem;
 
-  background-color: ${({ theme }) => theme.colors.elements.general};
+  background-color: ${({ theme }) => theme.colors.elements};
+  color: ${({ theme }) => theme.colors.text};
+
+  cursor: pointer;
 `;
 
-export const Icon = styled(IoMoonOutline)`
+export const DarkIcon = styled(IoMoonOutline)`
+  margin-right: 0.8rem;
+`;
+
+export const LightIcon = styled(IoMoon)`
   margin-right: 0.8rem;
 `;

@@ -17,7 +17,7 @@ export function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Header onToggleTheme={toggleTheme} />
+      <Header themeActive={theme.title} onToggleTheme={toggleTheme} />
 
       <Router>
         <Routes>

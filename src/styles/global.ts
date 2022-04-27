@@ -13,6 +13,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Manrope', sans-serif;
-    background-color: ${(props) => props.theme.colors.background};
+    background-color: ${({ theme }) => theme.colors.background};
+
+    color: ${({ theme }) => theme.colors.text};
   }
 `;
